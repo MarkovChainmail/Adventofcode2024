@@ -1,0 +1,17 @@
+{
+  "name": "aoc24",
+  "version": "1.0.0",
+  "description": "Advent of code 2024 with typescript",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npx tsx src/4.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  },
+  "dependencies": {
+  }
+}
