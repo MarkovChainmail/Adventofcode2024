@@ -95,7 +95,6 @@ function isLoop(direction: string, position: number[], data: string[]) {
 
     while (pos[0] >= 0 && pos[0] < data[0].length && pos[1] >= 0 && pos[1] < data.length) {
         if (visited.has([pos, direction])) {
-            // console.log(visited);
             return true;
         }
         visited.add([pos, direction])
@@ -170,13 +169,17 @@ function B() {
     let direction = "^"
     let total = 0;
 
+    // while in-bounds
     while (pos[0] >= 0 && pos[0] < data[0].length && pos[1] >= 0 && pos[1] < data.length) {
+        // do something based on direction
         switch(direction) {
             case "^": {
+                // if the next position is a collision, turn
                 const newPos = [pos[0], pos[1]-1]
                 if (checkCollision(newPos, data)) {
                     direction = ">"
                 } else {
+                    // if the next position isn't a collision, attempt to place an object
                     if (hasSpace(newPos, data, startingpos)) {
                         if (isLoop(direction, pos, placeObject(newPos, data))) {
                             total++;
