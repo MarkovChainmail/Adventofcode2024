@@ -53,8 +53,7 @@ function conditionalParseInt(n: number) {
 
 function B() {
     let data = readFileSync('./input/day13.txt', 'utf-8').split("\n\n")
-    console.log(sum(data.map(extractNumbers).map(solve).map(res => dot(res, [3, 1])).map(conditionalParseInt))) //.map(res => map(res, conditionalParseInt)).map(res => res.get([0, 0])))
-    //.map(solution => solution.map(conditionalParseInt)).map(res => dot(res, [3, 1])
+    console.log(sum(data.map(extractNumbers).map(solve).map(res => dot(res, [3, 1])).map(conditionalParseInt)))
 }
 
 A()
