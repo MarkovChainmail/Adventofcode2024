@@ -4,14 +4,13 @@
   "description": "Advent of code 2024 with typescript",
   "main": "index.ts",
   "scripts": {
-    "start": "npx tsx src/11.ts"
+    "start": "npx tsx src/13.ts"
   },
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "mathjs": "^14.0.1",
     "tsx": "^4.19.2"
-  },
-  "dependencies": {
   }
 }
