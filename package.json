@@ -4,7 +4,7 @@
   "description": "Advent of code 2024 with typescript",
   "main": "index.ts",
   "scripts": {
-    "start": "npx tsx src/13.ts"
+    "start": "npx tsx src/14.ts"
   },
   "author": "",
   "license": "ISC",
